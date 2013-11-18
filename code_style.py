@@ -20,3 +20,12 @@ if foo == 'prum':
     do_something()
 do_one()
 do_two()
+
+#Хитрые кортежи
+a = 2
+b = 5
+a, b = b, a
+l = ['David', 'Pythonista', '+1-514-555-1234']
+name, title, phone = l
+
+
