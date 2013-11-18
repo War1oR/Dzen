@@ -9,8 +9,14 @@ def ras(first, second, third,
 
 VeryLong = 'Очень длинная строка' + \
     'которая продолжается'
+
 #неявное объеденение
 print('o''n''e')
 text = ('Первая и'' вторая')
 print(text)
 
+#Составные операторы
+if foo == 'prum':
+    do_something()
+do_one()
+do_two()
