@@ -16,10 +16,11 @@ text = ('Первая и'' вторая')
 print(text)
 
 #Составные операторы
+foo = 'Qwe?'
 if foo == 'prum':
-    do_something()
-do_one()
-do_two()
+    print('Uh!')
+qwe = ras(1, 2, 3, 4, 5, 6)
+print(qwe)
 
 #Хитрые кортежи
 a = 2
@@ -28,4 +29,7 @@ a, b = b, a
 l = ['David', 'Pythonista', '+1-514-555-1234']
 name, title, phone = l
 
-
+#Ещё строки
+colors = ['red', 'blue', 'green', 'yellow']
+result = ''.join(colors)
+print('Choose', ', '.join(colors[:-1]),'or', colors[-1])
