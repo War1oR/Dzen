@@ -12,3 +12,6 @@ print()
 key = 'a'
 if key in d:
     print(d[key])
+
+#Метод словарей get
+navs = {}
