@@ -1,8 +1,12 @@
+__author__ = 'warior'
+__mastermind__ = 'http://habrahabr.ru/post/204476/'
+
 #Good
 d = {'a': '1', 'b': '2', 'c': '3'}
 for key in d:
     print(key, end=' ')
 print()
+
 #Bad
 for key in d.keys():
     print(key, end=' ')

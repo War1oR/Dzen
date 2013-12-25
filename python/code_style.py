@@ -1,6 +1,7 @@
+__author__ = 'warior'
+__mastermind__ = 'http://habrahabr.ru/post/88972/'
+
 #Длинные строки кода и их продолжения
-
-
 def ras(first, second, third,
         fourth, fifth, sixth):
     output = (first + second + third
