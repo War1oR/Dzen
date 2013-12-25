@@ -1,0 +1,18 @@
+author__ = warior
+mastermind = courses M101P Mongo Universe
+
+Create, Read, Update, Delete
+Insert, Find, Update, Remove
+
+>db.people.findOne({name : "jones"}, {name : 1, _id: 0})
+{name: "Jones"}
+           findOne({Запрос},{Формат вывода})
+
+           find().pretty() - Форматированный формат вывода
+{
+    "_id" : ObjectId("..."),
+    "name": "Jones",
+    ...
+}
+
+db.scores.find({score : $gt:95})

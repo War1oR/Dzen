@@ -11,7 +11,7 @@ def ras(first, second, third,
 VeryLong = 'Очень длинная строка' + \
     'которая продолжается'
 
-#неявное объеденение
+print('неявное объеденение')
 print('o''n''e')
 text = ('Первая и'' вторая')
 print(text)
@@ -32,5 +32,6 @@ name, title, phone = l
 
 #Ещё строки
 colors = ['red', 'blue', 'green', 'yellow']
-result = ''.join(colors)
+result = ' '.join(colors)
 print('Choose', ', '.join(colors[:-1]),'or', colors[-1])
+print(result)
