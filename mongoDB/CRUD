@@ -15,4 +15,21 @@ Insert, Find, Update, Remove
     ...
 }
 
-db.scores.find({score : $gt:95})
+db.scores.find({score : {$gt:95, $lte:58}})
+$gt - > $lt - < $gte - >= $lte - <=
+В случаи применения к строке, считается по ASCII
+
+db.people.find({proff: {%exsists : 1(0)}})
+Только записи, где есть(нет) поле proff
+
+db.people.find({name: {%type: 2}})
+тип данных по кодировке BSON
+
+db.people.find({$and($or): [{name: {$regex: "e$"}}}, {age: {$exists: 1}}])
+логические и(или)
+
+db.accounts.find({favorites: {$all($in):['prez','beer']}})
+все(одно из) вхождения(й) в массив
+
+db.users.find({'email.work':'ssa'})
+
