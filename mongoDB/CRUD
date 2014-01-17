@@ -33,3 +33,23 @@ db.accounts.find({favorites: {$all($in):['prez','beer']}})
 
 db.users.find({'email.work':'ssa'})
 
+sort({name:1}).skip(2).limit(5)
+последовательность обработки
+
+db.users.count()
+
+db.people.update({name: 'Smith'},{name: 'Tom', salary: 5}) - полная перезапись
+                                ,{$pop:{a: 1}} - удалить с права
+                                ,{$pop:{a: -1}} - удалить с лева
+                                ,{$push:{a: 6}} - добавить в конец элемента
+                                ,{$pushAll:{a: [2,4,8]}} - добавить всё
+                                ,{$pull:{a: 5}} - удалить
+                                ,{$pullAll:{a: [7,8,9]}} - удалить всё
+                                ,{$set:{a: 3}} - добавить поле
+                                ,{$addtoSet:{}} - если есть поле то выполнить
+
+db.people.update({},{},{upsert: 1}) - создать если не существует
+                      ,{multi: 1} - добавить всем
+
+db.people.remove() - удалить step by step
+db.people.drop() - удалить разом
