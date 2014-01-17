@@ -24,8 +24,13 @@ db.students.find().explain()
     nscannedObjects - кол-во просканируемых документов
     nscanned - кол-во индексов
 }
+cursor: Regular - = doc
+        Sparse - <= doc
+        Multykey - >> doc
 
 db.students.ensureIndex({td_id:1},{unique: 1, sparse: 1})
 создает уникальный индекс, если поля нет - документ не индексируется
 
-в
+db.map.ensureIndex({location: '2d'})
+db.map.find({$near:[50,50]})
+Декартовая система координат ($near - рядом)
