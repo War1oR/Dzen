@@ -1,5 +1,5 @@
 __author__ = 'warior'
-__mastermind__ = 'http://habrahabr.ru/post/204476/'
+__mastermind__ = ['http://habrahabr.ru/post/204476/','http://safehammad.com/downloads/python-idioms-2014-01-16.pdf']
 
 #Good
 d = {'a': '1', 'b': '2', 'c': '3'}
