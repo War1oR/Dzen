@@ -1,11 +1,18 @@
 База знаний.
 
 
-
 ===========
 
--- Python
+-- Python --
 
--- MongoDB
+----mystdlib
+------pathlib
+----Decorators
+
+
+-- MongoDB --
+
+----CRUD
+----Indexes
 
 ===========
