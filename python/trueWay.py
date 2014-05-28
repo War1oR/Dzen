@@ -42,3 +42,14 @@ if __name__ == '__main__':
     key = ['foo', 'bar', 'slow', 'pip', 'ext']
     m_dict = dict(zip(key, res))
     print(m_dict)
+    print('------------filter------------')
+
+    def containso(cell):
+            return 'o' in cell
+
+    res = filter(containso, key)
+    for i in res:
+        print(i)
+    print('-----------generator----------')
+    new = (x**2 for x in range(10))
+    print(new)
