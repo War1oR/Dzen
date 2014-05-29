@@ -20,7 +20,7 @@ class WidgetTestCase(unittest.TestCase):
     def test_name(self):
         self.assertEqual(self.widget.name, 'The widget', 'incorrect name')
 
-    #Срабатывает до тестов
+    #Срабатывает после тестов
     def tearDown(self):
         del self.widget
 
@@ -43,6 +43,12 @@ class SkippingTestCase(unittest.TestCase):
         self.assertEqual(file4test.__mastermind__,
                          "https://docs.python.org/3/library/unittest.html",
                          'incorrect master')
+
+
+@unittest.skip("showing class skipping")
+class MySkippedTestCase(unittest.TestCase):
+    def test_not_run(self):
+        pass
 
 
 def suite():
