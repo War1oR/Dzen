@@ -3,11 +3,10 @@
 
 -- Python --
 ------------
-* mystdlib
-  * pathlib
-  * Unittest
-    * file4test
-    * test
+* pathlib
+* Unittest
+  * file4test
+  * test
 * Decorators
 * trueWay
 
