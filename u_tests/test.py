@@ -1,12 +1,13 @@
+import unittest
+
+import file4test
+
 __author__ = 'warior'
 __mastermind__ = 'https://docs.python.org/3/library/unittest.html'
 
-import unittest
-import file4test
-
 
 class WidgetTestCase(unittest.TestCase):
-    #Срабатывает до тестов
+
     def setUp(self):
         self.widget = file4test.Widget('The widget')
 
@@ -20,7 +21,6 @@ class WidgetTestCase(unittest.TestCase):
     def test_name(self):
         self.assertEqual(self.widget.name, 'The widget', 'incorrect name')
 
-    #Срабатывает после тестов
     def tearDown(self):
         del self.widget
 

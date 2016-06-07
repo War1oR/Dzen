@@ -1,8 +1,8 @@
 __author__ = 'warior'
 __mastermind__ = ['http://habrahabr.ru/post/141411/', 'http://habrahabr.ru/post/141501/']
-#Декоратор обычный )
 
 
+# Декоратор обычный )
 def bread(func):
     def wrapper():
         print("</------\>")
@@ -26,9 +26,8 @@ def sandwich(food="--ветчина--"):
 
 sandwich()
 
-#Декоратор аргументированный
 
-
+# Декоратор аргументированный
 def uni_dec(func):
     def wrapper(*args, **kwargs):
         print('Вошло:')
